@@ -28,23 +28,26 @@
 
       <div class="bill">
         <label>Bill</label>
-        <input class="amount" placeholder="0" type="text">
+        <input type="number" class="amount" placeholder="0" min="0" />
       </div>
 
       <label for="bill" class="select_tip">Select Tip %</label>
 
       <div class="percents">
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <button class="custom">Custom</button>
+        <button id="5_percent">5%</button>
+        <button id="10_percent">10%</button>
+        <button id="15_percent">15%</button>
+        <button id="25_percent">25%</button>
+        <button id="50_percent">50%</button>
+        <input type="number" class="custom" placeholder="Custom" min="0" max="100" />
       </div>
 
       <div class="number_of_people">
-        <label for="number_of_people">Number of People</label>
-        <input class="people" placeholder="0" type="text">
+        <div class="cant_be_zero_error">
+          <label for="number_of_people">Number of People</label>
+          <label for="cant_be_zero" class="cant_be_zero">Can't be zero</label>
+        </div>
+        <input type="number" class="people" placeholder="0" min="0" />
 
       </div>
 
@@ -52,21 +55,29 @@
 
     <div class="container_two">
 
-      <div class="t_a_p_p">
-        <div class="test">
-          <label class="tip_amount">Tip Amount</label>
+      <div class="tip_container">
+        <div class="text">
+          <label class="tip_amount_per_person">Tip Amount</label>
           <label class="per_person">/ person</label>
         </div>
-        <span>0.00</span>
+        <div class="tip">
+          <span>$</span>
+          <span id="tip_amount">0.00</span>
+        </div>
       </div>
 
-      <div class="t_p_p">
-        <label class="total">Total</label>
-        <label class="per_person">/ person</label>
-        <span>0.00</span>
+      <div class="tip_container">
+        <div class="text">
+          <label class="tip_amount_per_person">Total</label>
+          <label class="per_person">/ person</label>
+        </div>
+        <div class="tip">
+          <span>$</span>
+          <span id="total">0.00</span>
+        </div>
       </div>
 
-      <button class="reset">RESET</button>
+      <button id="reset" class="reset" onclick="onResetClick()">RESET</button>
     </div>
 
   </div>
@@ -77,6 +88,7 @@
     Coded by
     <a href="https://github.com/andreslondono00/tip-calculator-app">Andrés Londoño</a>
   </div>
+  <script type="text/javascript" src="./js/calculator.js"></script>
 </body>
 
 </html>

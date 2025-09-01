@@ -22,9 +22,18 @@
 
     .container_two {
         width: 90%;
-        height: 32%;
+        height: 35%;
         padding: 20px;
         align-self: center;
+        gap: 10px;
+    }
+
+    .tip_container {
+        margin-top: 15px;
+    }
+
+    .tip_container span {
+        font-size: 36px;
     }
 
     .amount {
@@ -32,22 +41,24 @@
         margin-bottom: 20px;
     }
 
+    .people {
+        margin-bottom: 0px;
+    }
+
     .percents button {
         width: 150px;
         height: 50px;
     }
 
-    .t_a_p_p {
-        margin-bottom: 20px;
+    .percents .custom {
+        width: 150px;
+        height: 50px;
+        text-align: end;
+        padding: 0px 20px;
     }
 
-    .tip_amount,
-    .total {
+    .tip_amount_per_person {
         font-size: 16px;
-    }
-
-    .reset {
-        margin-top: 20px;
     }
 
     .attribution {
