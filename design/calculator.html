@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -28,24 +28,24 @@
 
       <div class="bill">
         <label>Bill</label>
-        <input type="number" class="amount" placeholder="0" min="0" />
+        <input type="number" class="amount" step="0.01" placeholder="0" min="0" />
       </div>
 
       <label for="bill" class="select_tip">Select Tip %</label>
 
       <div class="percents">
-        <button id="5_percent">5%</button>
-        <button id="10_percent">10%</button>
-        <button id="15_percent">15%</button>
-        <button id="25_percent">25%</button>
-        <button id="50_percent">50%</button>
+        <button id="5_percent" class="percent_button">5%</button>
+        <button id="10_percent" class="percent_button">10%</button>
+        <button id="15_percent" class="percent_button">15%</button>
+        <button id="25_percent" class="percent_button">25%</button>
+        <button id="50_percent" class="percent_button">50%</button>
         <input type="number" class="custom" placeholder="Custom" min="0" max="100" />
       </div>
 
       <div class="number_of_people">
         <div class="cant_be_zero_error">
           <label for="number_of_people">Number of People</label>
-          <label for="cant_be_zero" class="cant_be_zero">Can't be zero</label>
+          <label id="cant_be_zero" for="cant_be_zero" class="cant_be_zero">Can't be zero</label>
         </div>
         <input type="number" class="people" placeholder="0" min="0" />
 
@@ -77,7 +77,7 @@
         </div>
       </div>
 
-      <button id="reset" class="reset" onclick="onResetClick()">RESET</button>
+      <button id="reset" class="reset">RESET</button>
     </div>
 
   </div>
