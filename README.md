@@ -40,6 +40,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JavaScript
 
 ### What I learned
 
